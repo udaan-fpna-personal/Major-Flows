@@ -102,4 +102,5 @@ LEFT JOIN
 AS lst ON og.org_id=lst.org_id
 
 LEFT JOIN  ds_csv_top60city AS top60 ON concat (og.city,og.state) = concat (top60.city,top60.state)
-LEFT JOIN ds_csv_seller_gstin AS  selgst ON selgst.org_id = og.org_id;
+LEFT JOIN ds_csv_seller_gstin AS  selgst ON selgst.org_id = og.org_id
+			   ;
